@@ -92,8 +92,67 @@
 # discount_percent = float(input("Enter discount percent: "))
 # price(price1,discount_percent)
 #-------------------------------------------------------------------
-
-
+ # مشخص شدن نوع یک کاراکتر
+# def func(ch):
+#     if 48<=ord(ch)<=57:
+#         print("your character is a number!")
+#     elif 65<=ord(ch)<=90:
+#         print("your character is a capital letter!")
+#     elif 97 <= ord(ch) <= 122:
+#             print("your character is a small word!")
+#     else:
+#         print("other!")
+#
+# c = input("Enter the char: ")
+# func(c)
+#--------------------------------------------------------------------
+#تشخیص تعداد زوج و فرد یک لیست با نوشتن دو تابع lambda
+# ls = [1,2,3,4,5,6,7,8,9,10,22,66,31,51,33]
+# print("list:",ls)
+# fard = len(list(filter(lambda x:x%2!=0,ls)))
+# zogh = len(list(filter(lambda x:x%2==0,ls)))
+# print(f"tedad zogh: {zogh} \ntedad fard: {fard}")
+#--------------------------------------------------------------------
+# # مرتب کردن تاپل های داخل لیست بر اساس اعداد
+# ls = [("Reza",65),("Ali",93),("Sasan",42)]
+# print(ls)
+# ls.sort(key=lambda x:x[1])
+# print(ls)
+#-------------------------------------------------------------------
+# #مرتب کردن دیکشنری بر اساس رنگ میوه ها
+# ls = [{"name":"apple","weight":50,"color":"red"},
+#       {"name":"banana","weight":60,"color":"yellow"},
+#       {"name":"orange","weight":20,"color":"orange"},
+#       {"name":"coconut","weight":35,"color":"brown"}
+#       ]
+# print(ls)
+# ls.sort(key=lambda x:x["color"])
+# print("sorted list:",ls)
+#--------------------------------------------------------------------------
+#جدا کردن زوج و فرد یک لیست
+# ls = [1,2,3,4,5,6,7,8,9,10,22,66,31,51,33]
+# print("list:",ls)
+# fard =list(filter(lambda x:x%2!=0,ls))
+# zogh =list(filter(lambda x:x%2==0,ls))
+# print(f" zogh: {zogh} \n fard: {fard}")
+#---------------------------------------------------------------------
+#تبدیل اعداد به مربع و مکعب
+# ls = [1,2,3,4,5,6,7,8,9,10,22,66,31,51,33]
+# print("list:",ls)
+# moraba =list(map(lambda x:x**2,ls))
+# mokhab =list(map(lambda x:x**3,ls))
+# print(f"moraba{moraba}\nmokab{mokhab}")
+#-------------------------------------------------------------------
+#تشخیص حرف اول رشته ک آیا حرف مد نظر ما بوده است با شرط های داخل lambda
+# s = "reza"
+# starts_with = lambda s: True if s.startswith("a") else False
+# print(starts_with(s))
+#--------------------------------------------------------------------
+#تشخیص عدد بودن یک رشته یا عدم آن
+# s = "4.5"
+# is_num = lambda s:s.replace(".","",1).isdigit()
+# print(is_num(s))
+#---------------------------------------------------------------
 
 
 
